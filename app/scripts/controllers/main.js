@@ -10,4 +10,8 @@
 angular.module('tareasApp')
   .controller('MainCtrl', function ($scope) {
     $scope.tareas = [ 'Item'];
+    $scope.addTarea = function () {
+    	$scope.tareas.push($scope.tarea);
+    	$scope.tarea = '';
+    }
   });
